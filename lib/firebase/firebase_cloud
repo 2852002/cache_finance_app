@@ -1,0 +1,21 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+Future<void> updateData(String userId, double newLat, double newLng) async {
+  try {
+    await FirebaseFirestore.instance.collection('users').doc(userId).update({
+      'location.lat': newLat,
+      'location.lng': newLng,
+    });
+  } catch (e) {
+    print('Error updating document: $e');
+  }
+}
+
+Future<void> fetchData() async {
+  QuerySnapshot querySnapshot = await FirebaseFirestore.instance.collection('users').get();
+  querySnapshot.docs.forEach((doc) {
+    print(doc['name']); // Access 'name' field
+    print(doc['location']['lat']); // Access 'lat' subfield under 'location'
+    print(doc['location']['lng']); // Access 'lng' subfield under 'location'
+  });
+}
