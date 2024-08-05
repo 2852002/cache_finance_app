@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464729653645",
+    "project_id": "financetrack-63ecd",
+    "storage_bucket": "financetrack-63ecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464729653645:android:0c91aa59813f8746cfbdc4",
+        "android_client_info": {
+          "package_name": "com.example.finance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsqqPlKNlQjSTUh3Vaq92dlZcuD4BoaFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
